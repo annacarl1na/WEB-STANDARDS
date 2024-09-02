@@ -1,0 +1,208 @@
+/* Reseta estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definições gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Estilizando o cabeçalho */
+.hero {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #356f56;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-btn:hover {
+    background: #218838;
+}
+
+/* Estilizando a seção "Sobre Mim" */
+.about {
+    padding: 60px 20px;
+    background: #fff;
+    border-top: 5px solid #28a745;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #28a745;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+/* Estilizando a seção de serviços */
+.services, .benefits, .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2, .benefits h2, .contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #28a745;
+}
+
+.services ul, .benefits ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+.services li, .benefits li {
+    padding: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.services li:hover, .benefits li:hover {
+    transform: scale(1.05);
+}
+
+/* Formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/* Estilizando o rodapé */
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-content img {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .cta-btn {
+        padding: 15px 30px;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
